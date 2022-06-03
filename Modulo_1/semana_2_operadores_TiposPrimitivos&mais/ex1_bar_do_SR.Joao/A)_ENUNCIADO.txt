@@ -1,0 +1,16 @@
+O caixa no bar do Sr. João está cheio de diversas moedas. O Sr. João precisa fechar o caixa,
+mas está com dificuldade de fazer os cálculos do tanto de dinheiro que ele possui em moedas.
+Enquanto estava organizando ele conseguiu separar as moedas e contar a quantidade delas conforme a tabela:
+
+
+Moeda               Quantidade
+5 centavos             35
+10 centavos            50
+25 centavos            30
+50 centavos            15
+1 real 19
+
+
+Crie uma aplicação que calcule a quantidade de reais (R$) que o Sr. João possui moedas no caixa.
+A aplicação deve imprimir o valor total em reais (R$), pode-se utilizar ponto flutuante para poder
+representar o valor com duas casas decimais no momento que for imprimir na tela o valor.

@@ -1,0 +1,32 @@
+Sua equipe de desenvolvimento foi contratada por uma empresa de logística para criar uma aplicação
+para o cálculo de pacotes nas 3 cidades que essa empresa opera. A equação que é utilizada para o cálculo é:
+
+ - total = dimensões * peso * rota
+
+Cada uma das variáveis da equação pode ser resolvida conforme as tabelas abaixo:
+
+ Dimensções x Valor	 	                                  Peso x Multiplicador
+
+ Dimensções (cm³)	       |      Valor (R$)	 	      Peso (kg)	          |    Multiplicador
+ Volume < 1000	           |        10	 	              peso < 0,1	      |         1
+ 1000 <= volume < 10000	   |        20	 	              0,1 <= peso < 1	  |        1,5
+ 10000 <= volume < 30000   |        30	 	              1 <= peso < 10	  |         2
+ 30000 <= volume < 100000  |	       50	 	          10 <= peso < 30	  |         3
+ volume >= 100000	       |    Não é aceito	 	      peso >= 30	      |     Não é aceito
+
+ Rota x Multiplicador:
+
+ Rota	                                     Multiplicador
+ RS – De Rio de Janeiro até São Paulo	          1
+ SR – De São Paulo até Rio de Janeiro	          1
+ BS – De Brasília até São Paulo	                 1,2
+ SB – De São Paulo até Brasília	                 1,2
+ BR – De Brasília até Rio de Janeiro	         1,5
+ RB – Rio de Janeiro até Brasília	             1,5
+
+ - Elabore um programa que leia a altura (em cm), comprimento (em cm) e largura (em cm) do objeto.
+
+ - Leia o peso do objeto (em Kg) e qual a rota do objeto (utilize o código de duas letras das rotas).
+
+ - O programa irá calcular o valor do frete conforme a tabela acima, calcular o valor do frete e mostrar
+   o valor antes de ser encerrado.

@@ -1,0 +1,22 @@
+Uma bicicletaria está precisando de um sistema para controlar seu estoque. Para isso ela escolheu a sua empresa
+para poder criar esse sistema para ela. O sistema precisa possuir o seguinte menu de opções:
+
+Cadastrar peça
+Consultar peça
+Consultar todas as peças
+Consultar peças por código
+Consultar peças por Fabricante
+Retornar
+Remover Peça
+Sair
+Elabore um programa que:
+
+Seja possível cadastrar uma peça com código (deve ser gerado automaticamente pela aplicação), nome, fabricante e
+valor da peça (dica: use uma lista de dicionários para armazenar as peças)
+
+Seja possível consultar as peças, para isso um submenu deve ser exibido após selecionar a opção de consulta com as
+opções conforme o menu demonstrado no enunciado. O usuário irá escolher a opção desejada e a consulta deverá ser
+realizada conforme a opção. Será necessário que o usuário informe dados adicionais para algumas consultas.
+
+Seja possível apagar uma peça do estoque perguntando o código da peça para remove-la. Caso o código não exista não
+se deve fazer nada

@@ -1,0 +1,48 @@
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+1 - Quais tipos de colunas o banco SQLite suporta?
+
+R: O banco de dados SQLITE suporta 4 tipos de dados:
+INTEGER - Números inteiros
+REAL - Semehante ao Float
+TEXT - armazena textos (também pode ser usado VARCHAR(nº de caracteres)
+BLOB - informações em formato binário
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2 - Crie uma tabela chamada “cliente”. Nela, é necessário ter as seguintes colunas
+
+id
+nome
+cpf
+data_de_cadastro
+Endereco
+
+3 - Não foi informado o tipo dessas colunas na tabela “cliente”. Qual seria o tipo ideal para cada coluna?
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+________________________________________________________________________________________________________________
+                                     Respostas para exercícios 2 e 3:
+
+         OBS: o exercício 3 já é respondido na criação da tabela, pois os tipos de dados são utilizados.
+----------------------------------------------------------------------------------------------------------------
+
+                                                 __________
+                                                | EX 2 e 3 |
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Código escrito para criar a conexão em Python:
+
+import sqlite3
+
+conn = sqlite3.connect('conxaotreino.db')
+cur=conn.cursor()
+
+sql = '''create table cliente (
+id integer not null primary key autoincrement,
+nome varchar(150),
+cpf varchar(11) unique,
+data_de_cadastro varchar(10),
+endereco varchar(200);''')
+
+cur.execute(sql)
+conn.commit()
+conn.close()
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

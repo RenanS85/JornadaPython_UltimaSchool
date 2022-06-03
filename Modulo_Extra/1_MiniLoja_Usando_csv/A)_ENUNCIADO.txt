@@ -1,0 +1,16 @@
+Você é um dos programadores responsáveis pela construção de um aplicativo de vendas para uma
+determinada empresa que faz vendas no atacado.
+Uma das estratégias de venda dessa empresa é dar descontos progressivos por unidades conforme a tabela abaixo:
+
+Quantidade	          Unidades
+Até 9	              0% de desconto na unidade
+Entre 10 e 99	      5% de desconto na unidade
+Entre 100 e 999	      10% de desconto na unidade
+De 1000 para mais	  15% de desconto na unidade
+
+Elabore uma aplicação que:
+
+Entre com o valor unitário do produto
+Entre com a quantidade deste produto
+Calcule o valor total com desconto
+Imprima o valor total dos produtos sem desconto e o valor total com desconto
