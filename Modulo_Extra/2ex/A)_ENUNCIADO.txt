@@ -4,7 +4,7 @@ A lanchonete possui a seguinte tabela de produtos com sua descrição, valores e
  Código	             Descrição	         Valor (R$)
 
  100	  |       Cachorro-Quente	    |      9,00
- 101	  |    Cachorro-Quente Duplo  |	 11,00
+ 101	  |    Cachorro-Quente Duplo  |	    11,00
  102	  |            X-Egg	         |     12,00
  103	  |            X-Salada	      |     13,00
  104	  |            X-Bacon	       |     14,00
